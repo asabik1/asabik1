@@ -33,7 +33,7 @@ async function bootstrap() {
     swaggerOptions: { docExpansion: 'none', filter: true },
   });
 
-  app.enableCors({ origin: ['http://localhost:4200', 'https://164.92.190.238:3009', 'http://164.92.190.238:3009'] })
+  app.enableCors({ origin: ['http://localhost:4200', 'https://164.92.190.238:3007', 'https://164.92.190.238:3009', 'http://164.92.190.238:3009'] })
   mainConfig(app);
 
   await app.listen(process.env.APP_PORT);
